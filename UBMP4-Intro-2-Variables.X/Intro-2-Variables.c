@@ -91,29 +91,48 @@ void LED(unsigned char num)
 
 void noteE5(unsigned int per)   // Plays note E5 for requested number of cycles
 {
-    for(per; per != 0; per--)
-    {
-        BEEPER = 1;
-        __delay_us(758);
-        BEEPER = 0;
-        __delay_us(758);
-    }
+   for(per; per != 0; per--)
+   {
+       BEEPER = 1;
+       __delay_us(758);
+       BEEPER = 0;
+       __delay_us(758);
+   }
 }
-
+ 
 void noteCS6(unsigned int per)   // Plays note C#6 for requested number of cycles
 {
-
+   for(per; per !=0;per--)
+   {
+       BEEPER = 1;
+       __delay_us(1136);
+       BEEPER = 0;
+       __delay_us(1136);
+   }
 }
-
+ 
 void noteA5(unsigned int per)   // Plays note A5 for requested number of cycles
 {
-
+   for(per; per != 0; per--)
+   {
+       BEEPER = 1;
+       __delay_us(902);
+       BEEPER = 0;
+       __delay_us(902);
+   }
 }
-
+ 
 void noteE6(unsigned int per)   // Plays note E6 for requested number of cycles
 {
-
+   for(per; per != 0; per--)
+   {
+       BEEPER = 1;
+       __delay_us(1516);
+       BEEPER = 0;
+       __delay_us(1516);
+   }
 }
+
 
 /*==============================================================================
  Sound functions. 
